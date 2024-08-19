@@ -1,0 +1,709 @@
+/* Worksheet styles */
+/* Global styles */
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  margin: 50px 0;
+}
+
+#logo {
+  width: 10%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #f16059;
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+  border-bottom: 1px solid silver;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.17rem;
+  margin: 20px 0 10px 0;
+}
+
+h2,
+h3,
+h4,
+nav ul li a,
+p,
+ul,
+code {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+p, ul {
+  line-height: 1.5;
+}
+
+li {
+  line-height: 2;
+}
+
+a {
+  color: inherit;
+}
+
+code {
+  background-color: #EEECEC;
+  padding: 0 3px;
+  color: #1717b0;
+}
+
+.special-notes {
+  color: #f16059;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+header nav p {
+  text-align: left;
+}
+
+.header-content-wrapper {
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Creates boxes in legend */
+.parent-color {
+  color: #ede4f6;
+  background-color: #ede4f6;
+  border: 2px solid #d3b6f2;
+  padding: 0 20px;
+}
+
+.content-color {
+  color: #c4d6f7;
+  background-color: #c4d6f7;
+  border: 2px solid #aeaeef;
+  padding: 0 28px;
+}
+
+/* End creates boxes in legend */
+
+section {
+  margin-bottom: 100px;
+}
+
+.section-content-wrapper {
+  width: 90%;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* The parent flex container for most of the child boxes */
+.content-parent-container {
+  background-color: #ede4f6;
+  padding: 2px 0;
+  padding: 2px;
+}
+
+/* Parent flex containers for specific Flexbox properties */
+
+.wrap-content-parent-container {
+  background-color: #ede4f6;
+  padding: 2px 0;
+  padding: 2px;
+  height: 100px;
+}
+
+#flex-direction-section .content-parent-container,
+.flex-column-parent-container {
+  height: 150px;
+}
+
+.flex-flow-content-parent-container {
+  background-color: #ede4f6;
+  padding: 2px 0;
+  padding: 2px;
+  height: 100px;
+}
+
+.align-self-parent-container {
+  height: 250px;
+  align-items: center;
+}
+
+.align-self-parent-container p {
+  margin: 0;
+}
+
+/* End parent flex containers for specific Flexbox properties */
+
+/* Child flex item styles */
+
+.child-box {
+  height: 25px;
+  width: 25%;
+  outline: 2px solid #aeaeef;
+  background: #c4d6f7;
+}
+
+.child-text-box {
+  padding: 10px;
+  outline: 2px solid #aeaeef;
+  background: #c4d6f7;
+}
+
+.child-wrap-box {
+  height: 25px;
+  width: 30%;
+  outline: 2px solid #aeaeef;
+  background: #c4d6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-direction-box {
+  height: 25px;
+  width: 75%;
+  outline: 2px solid #aeaeef;
+  background: #c4d6f7;
+}
+
+.child-align-self-box {
+  width: 30%;
+  outline: 2px solid #aeaeef;
+  background: #c4d6f7;
+}
+
+.flex-row-parent-container .child-flex-shrink-box {
+  width: 200px;
+}
+
+.flex-column-parent-container .child-flex-shrink-box {
+  height: 75px;
+}
+
+.box-1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.box-2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* End child flex item styles */
+
+@media (min-width: 768px) {
+
+  .property-description {
+    width: 80%;
+  }
+
+  .two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .two-column-child {
+    width: 47%;
+  }
+
+  .three-column-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .three-column-child {
+    width: 30%;
+  }
+
+  /* Parent flex containers for specific Flexbox properties */
+
+  .wrap-content-parent-container {
+    height: 150px;
+  }
+
+  #flex-direction-section .content-parent-container,
+  .flex-column-parent-container {
+    height: 200px;
+  }
+
+  .flex-flow-content-parent-container {
+    height: 200px;
+  }
+
+  /* End parent flex containers for specific Flexbox properties */
+
+  /* Child flex item styles */
+
+  .child-box {
+    height: 50px;
+  }
+
+  .child-wrap-box {
+    height: 50px;
+  }
+
+  .child-direction-box {
+    height: 50px;
+  }
+
+  .flex-row-parent-container .child-flex-shrink-box {
+    width: 400px;
+  }
+
+  .flex-column-parent-container .child-flex-shrink-box {
+    height: 75px;
+  }
+
+  .box-1 {
+    margin: 0;
+  }
+
+  .box-2 {
+    width: 60%;
+    margin: 0;
+  }
+
+  /* End child flex item styles */
+
+}
+
+@media (min-width: 1200px) {
+  body {
+    margin: 100px 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+  }
+
+  .description {
+    width: 70%;
+  }
+
+  .property-description {
+    width: 70%;
+  }
+
+  /* Parent flex containers for specific Flexbox properties */
+
+  .wrap-content-parent-container {
+    height: 200px;
+  }
+
+  #flex-direction-section .content-parent-container,
+  .flex-column-parent-container {
+    height: 300px;
+  }
+
+  /* End parent flex containers for specific Flexbox properties */
+
+  /* Child flex item styles */
+
+  .child-box {
+    height: 75px;
+  }
+
+  .child-wrap-box {
+    height: 75px;
+  }
+
+  .child-direction-box {
+    height: 75px;
+  }
+
+  .flex-row-parent-container .child-flex-shrink-box {
+    width: 800px;
+  }
+
+  .flex-column-parent-container .child-flex-shrink-box {
+    height: 120px;
+  }
+
+  /* End child flex item styles */
+}
+
+/* START COMPLETING THE WORKSHEET HERE */
+/* There are no media queries to add code to. The worksheet's reponsive design is created above. */
+
+/* justify-content */
+section#justify-content-section {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-center-parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-space-between-parent-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-content-space-around-parent-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly-parent-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.justify-content-flex-start-parent-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify-content-flex-end-parent-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* end justify-content */
+
+/* align-items */
+section#align-items-section {
+  /* place your code here */
+}
+
+.align-items-center-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.align-items-stretch-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.align-items-baseline-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.align-items-flex-start-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.align-items-flex-end-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+/* end align-items */
+
+/* flex-wrap */
+section#flex-wrap-section {
+  /* place your code here */
+}
+
+.flex-wrap-nowrap-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.flex-wrap-wrap-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.flex-wrap-wrap-reverse-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+/* end flex-wrap */
+
+/* align-content */
+section#align-content-section {
+  /* place your code here */
+}
+
+/* Fixed heights have been set in the .wrap-content-parent-container code blocks */
+
+.align-content-center-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 250px;
+}
+
+.align-content-space-between-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 250px;
+}
+
+.align-content-space-around-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.align-content-space-evenly-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.align-content-stretch-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.align-content-flex-start-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.align-content-flex-end-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* end align-content */
+
+/* gap */
+section#gap-section {
+/* place your code here */
+}
+
+.gap-parent-container {
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+
+.row-gap-parent-container {
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+
+.column-gap-parent-container {
+  /* place your code here */
+  flex-wrap: wrap;
+}
+
+/* end gap */
+
+/* flex-direction section */
+section#flex-direction-section {
+  /* place your code here */
+}
+
+.column-justify-content-center-parent-container {
+  /* place your code here */
+  justify-content: center;
+  align-items: center;
+}
+
+.column-justify-content-space-between-parent-container {
+  /* place your code here */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-justify-content-space-around-parent-container {
+  /* place your code here */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column-justify-content-space-evenly-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.column-justify-content-flex-start-parent-container {
+  /* place your code here */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.column-justify-content-flex-end-parent-container {
+  /* place your code here */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* end flex-direction */
+
+/* flex-flow section */
+section#flex-flow-section {
+  /* place your code here */ 
+}
+
+.flex-flow-row-nowrap-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.flex-flow-row-wrap-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.flex-flow-row-wrap-reverse-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.flex-flow-column-nowrap-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.flex-flow-column-wrap-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+.flex-flow-column-wrap-reverse-parent-container {
+  /* place your code here */
+  justify-content: space-evenly;
+}
+
+/* end flex-flow */
+
+/* flex section */
+section#flex-content-section {
+  /* place your code here */
+}
+
+.flex-row-parent-container {
+  /* Add display: flex; to make this div a parent flex container */
+}
+
+.child-flex-basis-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 600px;
+}
+
+.child-flex-shrink-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.child-flex-grow-box {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-parent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* End flex section */
+
+/* order */
+section#order-section {
+  /* place your code here */
+}
+
+.order-parent-container {
+  /* Add display: flex; to make this div a parent flex container */
+  justify-content: space-around;
+}
+
+.order-child-flex-item-1 {
+  /* place your code here */
+}
+
+.order-child-flex-item-2 {
+  /* place your code here */
+}
+
+.order-child-flex-item-3 {
+  /* place your code here */
+}
+
+.order-child-flex-item-4 {
+  /* place your code here */
+}
+
+.order-child-flex-item-5 {
+  /* place your code here */
+}
+
+/* end order */
+
+/* align-self */
+section#align-self-section {
+  /* place your code here */
+}
+
+.align-self-parent-container {
+  /* Add display: flex; to make this div a parent flex container */
+  justify-content: space-around;
+}
+
+.align-self-auto-child-flex-item {
+  /* place your code here */
+}
+
+.align-self-flex-start-child-flex-item {
+  /* place your code here */
+}
+
+.align-self-flex-end-child-flex-item {
+  /* place your code here */
+}
+
+.align-self-center-child-flex-item {
+  /* place your code here */
+}
+
+.align-self-baseline-child-flex-item {
+  /* place your code here */
+}
+
+.align-self-stretch-child-flex-item {
+  /* place your code here */
+}
+
+/* end align-self */
